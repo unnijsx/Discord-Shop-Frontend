@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "Discord Shop Frontend",
+  "name": "your-frontend-app",
   "builds": [
     {
       "src": "package.json",
@@ -12,11 +12,19 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/[^.]+", 
       "dest": "/index.html"
+    },
+    {
+      "src": "/", 
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)", 
+      "dest": "/$1"
     }
   ],
   "env": {
-    "VITE_FRONTEND_URL": "https://your-frontend-domain.vercel.app" 
+    "VITE_FRONTEND_URL": "https://your-frontend-domain.vercel.app"
   }
 }
