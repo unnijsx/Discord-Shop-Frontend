@@ -1,0 +1,22 @@
+.glow-text {
+  color: #fff;
+  text-shadow:
+    0 0 8px #ff1744,
+    0 0 22px #fff,
+    0 0 4px #ff1744;
+}
+.red-glow { box-shadow: 0 0 15px #ff1744aa; }
+.white-glow { box-shadow: 0 0 18px #fff9; }
+.landing-root, .about-root, .contact-root {
+  background: linear-gradient(135deg, #1a0505 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+.glow-btn {
+  background: linear-gradient(45deg, #ff1744 40%, #fff3 100%);
+  color: #fff;
+  text-shadow: 0 0 6px #ff1744;
+  filter: drop-shadow(0 0 10px #fff8);
+}
+.section-title { color: #ff1744; margin: 2rem 0 1rem 0; }
+.feature-card { padding: 2rem; border-radius: 12px; background: #222b; }
+.promo-modal { background: #211; border-radius: 20px; padding: 2rem; }
